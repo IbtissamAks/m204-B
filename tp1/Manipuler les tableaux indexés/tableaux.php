@@ -35,3 +35,11 @@ foreach ($notes as $note) {
     $compteur++;
 }
 echo PHP_EOL;
+
+// 4. Parcours des prénoms avec foreach ($prenoms as $i => $prenom)
+echo "Liste des prénoms : ";
+$listeFormattee = [];
+foreach ($prenoms as $i => $prenom) {
+    $listeFormattee[] = ($i + 1) . ". $prenom";
+}
+echo implode(", ", $listeFormattee) . PHP_EOL . PHP_EOL;
